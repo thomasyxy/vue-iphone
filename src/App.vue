@@ -29,16 +29,8 @@ export default {
   },
   mounted () {
     setInterval(() => {
-      if (this.signal >= 5) {
-        this.signal = 1
-      } else {
-        this.signal++
-      }
-      if (this.battery > 0) {
-        this.battery--
-      } else {
-        this.battery = 100
-      }
+      this.signal >= 5 ? this.signal = 1 : this.signal++
+      this.battery > 0 ? this.battery-- : this.battery = 100
     }, 1000)
   }
 }
