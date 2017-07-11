@@ -1,0 +1,55 @@
+<template>
+  <div id="app">
+    <Phone @home="clickHome" :signal="signal" :battery="battery" background="http://ww1.sinaimg.cn/mw690/6ec8ccd0gw1e67grbw0cnj20hs0vk79o.jpg">
+      <div class="demo-page">
+        hello world
+      </div>
+    </Phone>
+  </div>
+</template>
+
+<script>
+import Phone from 'vue-phone'
+
+export default {
+  name: 'app',
+  data () {
+    return {
+      signal: 0,
+      battery: 100
+    }
+  },
+  components: {
+    Phone
+  },
+  methods: {
+    clickHome () {
+      console.log('home')
+    }
+  },
+  mounted () {
+    setInterval(() => {
+      if (this.signal >= 5) {
+        this.signal = 1
+      } else {
+        this.signal++
+      }
+      if (this.battery > 0) {
+        this.battery--
+      } else {
+        this.battery = 100
+      }
+    }, 1000)
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
