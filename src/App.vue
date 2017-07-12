@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Phone @home="clickHome" :signal="signal" :battery="battery" background="http://ww1.sinaimg.cn/mw690/6ec8ccd0gw1e67grbw0cnj20hs0vk79o.jpg">
-      <div class="demo-page">
-        hello world
+      <div class="iphone-page">
+        <Application v-for="(item, index) in appList" class="" :name="item.name" />
       </div>
     </Phone>
   </div>
@@ -10,17 +10,25 @@
 
 <script>
 import Phone from 'vue-phone'
+import Application from './components/application'
 
 export default {
   name: 'app',
   data () {
     return {
       signal: 0,
-      battery: 100
+      battery: 100,
+      appList: [
+        {
+          name: 'safari',
+          icon: '/asdsada'
+        }
+      ]
     }
   },
   components: {
-    Phone
+    Phone,
+    Application
   },
   methods: {
     clickHome () {

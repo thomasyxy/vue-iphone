@@ -12,7 +12,7 @@
           props: {
             name: {
               type: [String],
-              default: 'safari'
+              default: 'hello'
             }
           }
         }
