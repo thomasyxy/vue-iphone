@@ -1,7 +1,7 @@
 <template>
   <div class="iphone-application">
     <div class="appliction-icon">
-      {{name}}
+      <img :src="" alt="">
     </div>
   </div>
 </template>
@@ -13,6 +13,10 @@
             name: {
               type: [String],
               default: 'hello'
+            },
+            icon: {
+              type: [String],
+              default: ''
             }
           }
         }
