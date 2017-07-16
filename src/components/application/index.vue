@@ -3,6 +3,9 @@
     <div class="appliction-icon">
       <img :src="icon" alt="">
     </div>
+    <div class="application-name">
+      {{name}}
+    </div>
   </div>
 </template>
 <script>
@@ -25,3 +28,23 @@ export default {
   }
 }
 </script>
+<style lang="less">
+  .iphone-application {
+    box-sizing: border-box;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .appliction-icon {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .application-name {
+    color: #fff;
+  }
+</style>

@@ -2,7 +2,7 @@
   <div id="app">
     <Phone @home="clickHome" :signal="signal" :battery="battery" background="http://ww1.sinaimg.cn/mw690/6ec8ccd0gw1e67grbw0cnj20hs0vk79o.jpg">
       <div class="iphone-page">
-        <Application v-for="(item, index) in appList" class="" :name="item.name" />
+        <Application v-for="(item, index) in appList" key="index" class="" :name="item.name" />
       </div>
     </Phone>
   </div>
