@@ -11,6 +11,7 @@
 <script>
 import Phone from 'vue-phone'
 import Application from './components/application'
+import Folder from './components/folder'
 
 export default {
   name: 'app',
@@ -58,7 +59,8 @@ export default {
   },
   components: {
     Phone,
-    Application
+    Application,
+    Folder
   },
   methods: {
     clickHome () {
