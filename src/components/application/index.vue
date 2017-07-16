@@ -31,7 +31,7 @@ export default {
 <style lang="less">
   .iphone-application {
     box-sizing: border-box;
-    width: 100px;
+    width: 25%;
     padding: 10px;
     display: flex;
     justify-content: center;

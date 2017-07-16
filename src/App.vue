@@ -2,7 +2,7 @@
   <div id="app">
     <Phone @home="clickHome" :signal="signal" :battery="battery" background="http://ww1.sinaimg.cn/mw690/6ec8ccd0gw1e67grbw0cnj20hs0vk79o.jpg">
       <div class="iphone-page">
-        <Application v-for="(item, index) in appList" key="index" class="iphone-app" :name="item.name" />
+        <Application v-for="(item, index) in appList" key="index" class="iphone-app" :name="item.name" :icon="item.icon" />
       </div>
     </Phone>
   </div>
@@ -21,23 +21,37 @@ export default {
       appList: [
         {
           name: 'safari',
-          icon: '/asdsada'
+          icon: 'http://img.talkandroid.com/uploads/2013/10/facebook_messenger_app_icon.png'
         },
         {
-          name: 'safari',
-          icon: '/asdsada'
+          name: 'safari'
         },
         {
-          name: 'safari',
-          icon: '/asdsada'
+          name: 'safari'
         },
         {
-          name: 'safari',
-          icon: '/asdsada'
+          name: 'safari'
         },
         {
-          name: 'safari',
-          icon: '/asdsada'
+          name: 'safari'
+        },
+        {
+          name: 'safari'
+        },
+        {
+          name: 'safari'
+        },
+        {
+          name: 'safari'
+        },
+        {
+          name: 'safari'
+        },
+        {
+          name: 'safari'
+        },
+        {
+          name: 'safari'
         }
       ]
     }
@@ -70,6 +84,7 @@ export default {
 }
 .iphone-page {
   display: flex;
+  flex-wrap: wrap;
   .iphone-app {
 
   }
