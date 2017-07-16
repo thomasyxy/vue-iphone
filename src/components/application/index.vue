@@ -1,25 +1,27 @@
 <template>
   <div class="iphone-application">
     <div class="appliction-icon">
-      <img :src="" alt="">
+      <img :src="icon" alt="">
     </div>
   </div>
 </template>
 <script>
-    export default {
-      data () {
-        return {
-          props: {
-            name: {
-              type: [String],
-              default: 'hello'
-            },
-            icon: {
-              type: [String],
-              default: ''
-            }
-          }
-        }
-      }
+import defaultIcon from './default_icon.png'
+export default {
+  name: 'application',
+  data () {
+    return {
     }
+  },
+  props: {
+    name: {
+      type: [String],
+      default: 'hello'
+    },
+    icon: {
+      type: [String],
+      default: defaultIcon
+    }
+  }
+}
 </script>
