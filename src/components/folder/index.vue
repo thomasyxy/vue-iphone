@@ -15,7 +15,7 @@ export default {
   props: {
     name: {
       type: [String],
-      default: 'hello'
+      default: '文件夹'
     }
   }
 }
