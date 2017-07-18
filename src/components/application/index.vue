@@ -28,7 +28,7 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
   .iphone-application {
     box-sizing: border-box;
     width: 25%;
@@ -39,7 +39,9 @@ export default {
     flex-direction: column;
   }
   .appliction-icon {
-    width: 100%;
+    width: 70px;
+    height: 70px;
+    display: flex;
     img {
       width: 100%;
     }
