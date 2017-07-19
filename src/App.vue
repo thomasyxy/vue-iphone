@@ -88,8 +88,5 @@ export default {
 .iphone-page {
   display: flex;
   flex-wrap: wrap;
-  .iphone-app {
-
-  }
 }
 </style>
