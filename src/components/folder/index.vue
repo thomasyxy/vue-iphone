@@ -1,7 +1,14 @@
 <template>
   <div class="iphone-folder">
     <div class="folder-collection">
+      <div class="folder-application" v-for="app in apps">
+        <div class="folder-application-icon">
 
+        </div>
+        <div class="folder-application-name">
+
+        </div>
+      </div>
     </div>
     <div class="folder-name">
       {{name}}
@@ -19,6 +26,10 @@ export default {
     name: {
       type: [String],
       default: '文件夹'
+    },
+    apps: {
+      type: [Array],
+      default: []
     }
   }
 }
