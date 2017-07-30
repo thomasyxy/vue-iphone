@@ -3,7 +3,7 @@
     <div class="folder-collection">
       <div class="folder-application" v-for="app in apps">
         <div class="folder-application-icon">
-          
+
         </div>
         <div class="folder-application-name">
 
